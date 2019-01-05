@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="193px" height="16px" viewBox="0 0 193 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll bar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="NEWWW" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-page" transform="translate(-213.000000, -438.000000)">
+            <g id="scroll-bar" transform="translate(213.000000, 438.000000)">
+                <path d="M0.497383431,9.5 L191.588625,9.5" id="Line-2-Copy" stroke="#979797" stroke-linecap="square"></path>
+                <circle id="Oval-3" fill="#D8D8D8" cx="114" cy="8" r="8"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

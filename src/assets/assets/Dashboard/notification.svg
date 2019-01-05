@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="24px" viewBox="0 0 17 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>not</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-zabuni" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10" transform="translate(-841.000000, -73.000000)" fill="#9B9B9B">
+            <g id="Group-18-Copy" transform="translate(34.000000, 45.000000)">
+                <g id="Group-6-Copy" transform="translate(0.000000, 8.000000)">
+                    <g id="bar" transform="translate(807.000000, 10.000000)">
+                        <g id="not" transform="translate(0.000000, 10.000000)">
+                            <path d="M15.6711494,16.8562103 C14.2490579,14.4003288 15.0785854,13.0415056 14.5196067,8.49546257 C14.0187287,4.42239363 10.8995396,3.25630297 9.30190244,2.92342426 L9.30190244,0 L7.67632927,0 L7.67632927,2.92342426 C6.07646341,3.25630297 2.95727439,4.42234287 2.45753659,8.49546257 C1.89855793,13.0393737 2.72808537,14.4003288 1.3059939,16.8562103 C0.928106707,17.504405 0.456304878,18.0256003 0.0180365854,18.42741 L0.0180365854,19.3755915 L16.9579665,19.3755915 L16.9579665,18.42741 C16.5208384,18.0256003 16.0468079,17.504405 15.6711494,16.8562103 L15.6711494,16.8562103 Z" id="Shape"></path>
+                            <ellipse id="Oval" cx="8.48802744" cy="21.9891817" rx="1.98666768" ry="1.94565016"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

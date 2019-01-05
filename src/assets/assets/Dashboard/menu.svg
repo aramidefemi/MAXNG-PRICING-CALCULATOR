@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1 C0,0.44771525 0.444946289,0 0.993397683,0 L17.0066023,0 C17.5552407,0 18,0.443864822 18,1 C18,1.55228475 17.5550537,2 17.0066023,2 L0.993397683,2 C0.444759292,2 0,1.55613518 0,1 Z M0,7 C0,6.44771525 0.444946289,6 0.993397683,6 L17.0066023,6 C17.5552407,6 18,6.44386482 18,7 C18,7.55228475 17.5550537,8 17.0066023,8 L0.993397683,8 C0.444759292,8 0,7.55613518 0,7 Z M0,13 C0,12.4477153 0.446311399,12 0.997544646,12 L8.00245535,12 C8.55338405,12 9,12.4438648 9,13 C9,13.5522847 8.5536886,14 8.00245535,14 L0.997544646,14 C0.446615951,14 0,13.5561352 0,13 Z" id="path-1"></path>
+    </defs>
+    <g id="New-zabuni" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10" transform="translate(-16.000000, -132.000000)">
+            <g id="ic_menu" transform="translate(16.000000, 132.000000)">
+                <g id="Icon-24px">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

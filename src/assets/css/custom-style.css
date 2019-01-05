@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body, p, h1, h2, h3, h4, h5, h6, span, div,
+ .navbar-transparent.navbar-inverse .navbar-nav .nav-link, 
+ .navbar-transparent.navbar-inverse .navbar-nav .nav-link:hover{
+    color: #1c3651;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section.main-header {
+  padding-bottom: 250px;
+
+height: 100vh;
+ 
+background-repeat: no-repeat;
+
+background-position: bottom;
+
+background-size: 100% 100%;
+}
+
+
+  .navbar-brand  {
+  color: #1c3651;
+
+font-weight: bolder;
+
+font-size: 30px;
+}
+
+
+section.main-header .form-place {
+  box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+  padding: 10px 20px; 
+  background-color: white;
+}
+
+section.main-header .action-place {
+bottom: 150px;
+position: absolute;
+width: 80vw;
+right: 0px;
+}
+
+section.main-header .action-place  button{
+  background-color:  #1c3651;
+    height: 90%;
+    color: white;
+    margin-top:2.5%;
+    font-weight:600;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+    cursor: pointer;;
+}
+section.main-header .action-place  button:hover{
+  background-color:  #1c3651fe; 
+}
+section.main-header .form-place label {
+font-size: 12px;
+
+margin-bottom: 0;
+
+font-weight: bold;
+}
+section.main-header .form-place i {
+position: absolute;
+
+opacity: .5;
+}
+section.main-header .form-place i.form {
+  left: 15px;
+
+top: 31px;
+}
+
+section.main-header .form-place  input {
+    background-color: #fff;
+    padding-left: 20px;
+  height: 20px;
+   width: 100%;
+   border:none;
+    font-size: 14px;
+     color: #1c3651;
+}
+.b-r {
+  border-right: 2px solid #f3f2f7;
+}
+
+section.main-header .form-place .search input {
+ 
+}
+section.main-header .form-place .filter input {
+ 
+}
+
+
+section.main-header h2.heading {
+  font-weight: bold !important;
+color: #1c3651;
+font-size: 50px;
+}
+section.main-header .illustration {
+  width: 100%;
+/*position: relative;
+bottom: 50px;*/
+}
+
+.destination-card-xs {
+  box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+  border-radius: 2px;
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+background-repeat: no-repeat;
+}
+.destination-card-xs p {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  font-size: 10px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,.4);
+}
+section.main-header .destinations {
+  position: relative;
+  bottom:130px;
+}

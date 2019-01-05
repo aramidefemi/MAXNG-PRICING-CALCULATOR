@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>check box</title>
+    <desc>Created with Sketch.</desc>
+    <g id="NEWWW" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-page" transform="translate(-136.000000, -658.000000)">
+            <g id="breadcrumbs-copy-3" transform="translate(93.000000, 578.000000)">
+                <g id="Group-8" transform="translate(43.000000, 80.000000)">
+                    <g id="Group-7">
+                        <g id="check-box">
+                            <rect id="base" stroke-opacity="0.215409873" stroke="#989898" fill="#7ED321" x="0.5" y="0.5" width="18" height="18" rx="2"></rect>
+                            <path d="M12.8064676,7.18165768 C12.5484244,6.93944744 12.1306715,6.93944744 11.8732882,7.18165768 L8.33327834,10.5044601 L7.1262168,9.37208078 C6.86883353,9.12987053 6.45108068,9.12987053 6.19303745,9.37208078 C5.93565418,9.61367156 5.93565418,10.005792 6.19303745,10.2480022 L7.86668867,11.8183423 C8.12407194,12.0605526 8.54182478,12.0605526 8.79986801,11.8183423 L12.8064676,8.05757914 C13.0645108,7.81598835 13.0645108,7.42386793 12.8064676,7.18165768" id="tick-icon" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
