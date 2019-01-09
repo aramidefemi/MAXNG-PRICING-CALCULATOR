@@ -16,7 +16,7 @@ background-repeat: no-repeat;
 
 background-position: bottom;
 
-background-size: 100% 100%;
+background-size: cover;
 }
 
 
@@ -97,6 +97,7 @@ section.main-header .form-place .filter input {
 section.main-header h2.heading {
   font-weight: bold !important;
 color: #1c3651;
+padding-top: 80px;
 font-size: 50px;
 }
 section.main-header .illustration {
@@ -125,4 +126,35 @@ background-repeat: no-repeat;
 section.main-header .destinations {
   position: relative;
   bottom:130px;
+}
+
+@media  (max-width: 500px) {
+  .slice--offset-top {
+    padding: 0 !important;
+        padding-top: 0rem !important;
+  }  
+  .st-container { 
+    overflow: auto;
+}
+section.main-header h2.heading {
+  font-weight: bold !important;
+color: #1c3651;
+padding-top: 0px;
+font-size: 20px;
+text-align: center;
+}
+section.main-header .action-place {
+bottom: 0px;
+position: absolute;
+ top: 150px;
+ right: 15px;
+width: 95vw; 
+}
+section.main-header .destinations {
+    position: relative;
+    top: 300px;
+}
+.destination-card-xs {
+ margin:5px;
+}
 }
