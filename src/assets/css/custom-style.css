@@ -29,20 +29,20 @@ font-size: 30px;
 }
 
 
-section.main-header .form-place {
+ .form-place {
   box-shadow: 0px 2px 5px rgba(0,0,0,.4);
   padding: 10px 20px; 
   background-color: white;
 }
 
-section.main-header .action-place {
+ .action-place {
 bottom: 150px;
 position: absolute;
 width: 80vw;
 right: 0px;
 }
 
-section.main-header .action-place  button{
+ button{
   background-color:  #1c3651;
     height: 90%;
     color: white;
@@ -52,28 +52,28 @@ section.main-header .action-place  button{
     box-shadow: 0px 2px 5px rgba(0,0,0,.4);
     cursor: pointer;;
 }
-section.main-header .action-place  button:hover{
+ button:hover{
   background-color:  #1c3651fe; 
 }
-section.main-header .form-place label {
+ .form-place label {
 font-size: 12px;
 
 margin-bottom: 0;
 
 font-weight: bold;
 }
-section.main-header .form-place i {
+ .form-place i {
 position: absolute;
 
 opacity: .5;
 }
-section.main-header .form-place i.form {
+ .form-place i.form {
   left: 15px;
 
 top: 31px;
 }
 
-section.main-header .form-place  input {
+ .form-place  input {
     background-color: #fff;
     padding-left: 20px;
   height: 20px;
@@ -86,15 +86,15 @@ section.main-header .form-place  input {
   border-right: 2px solid #f3f2f7;
 }
 
-section.main-header .form-place .search input {
+  .form-place .search input {
  
 }
-section.main-header .form-place .filter input {
+ .form-place .filter input {
  
 }
 
 
-section.main-header h2.heading {
+h2.heading {
   font-weight: bold !important;
 color: #1c3651;
 padding-top: 80px;
@@ -140,13 +140,13 @@ section.main-header h2.heading {
   font-weight: bold !important;
 color: #1c3651;
 padding-top: 0px;
-font-size: 20px;
+font-size: 25px;
 text-align: center;
 }
 section.main-header .action-place {
 bottom: 0px;
 position: absolute;
- top: 150px;
+ top: 180px;
  right: 15px;
 width: 95vw; 
 }
