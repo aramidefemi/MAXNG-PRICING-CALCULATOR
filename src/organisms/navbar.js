@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AppNavbarItems from "../molecules/nav-items";
+import { Link } from "react-router-dom"; 
 
 class AppNavbar extends Component {
 
@@ -8,7 +9,7 @@ class AppNavbar extends Component {
     	        <div class="header">
           <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar-inverse ">
             <div class="container navbar-container">
-              <a class="navbar-brand" href="index.html">
+              <Link class="navbar-brand" to="/">
               HH
          {/*       <img
                   src="assets/images/logo/logo-1-a.png"
@@ -16,7 +17,7 @@ class AppNavbar extends Component {
                   alt="HH"
                 />*/}
                
-              </a>
+              </Link>
 
               <div class="d-inline-block">
                 <button

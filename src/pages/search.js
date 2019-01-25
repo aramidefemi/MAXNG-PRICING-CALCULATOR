@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import AppSearchbar from "../organisms/searchbar";
-import AppProduct from "../molecules/product"
 import AppNavbar  from "../organisms/navbar";
+import AppProductRow from "../organisms/product-row";
 
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
@@ -30,17 +30,16 @@ class AppSearchPage extends Component {
                     {/*<AppSearchFilters />*/}
                   </div>
                   <div className="col-md-8">
-                    <div className="row">
-                      <div className="col-md-4">
-                       <AppProduct  image={img1} />
-                      </div>   
-                      <div className="col-md-4">
-                       <AppProduct  image={img2} />
-                      </div>   
-                      <div className="col-md-4">
-                        <AppProduct  image={img1} />
-                      </div>
-                    </div>
+                     <AppProductRow columns="4" 
+                       items={
+                        [
+                          {link:'/product',image:img2},
+                          {link:'/product',image:img1},
+                          {link:'/product',image:img2},
+                          {link:'/product',image:img1}
+                        ]
+                       } 
+                     />
                   </div>
             </div>
           </div>

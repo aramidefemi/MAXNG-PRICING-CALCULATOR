@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import AppSearchbar from "../organisms/searchbar"; 
+import AppNavbar  from "../organisms/navbar";
+import AppProductRow from "../organisms/product-row";
+
 import wave from "../assets/wave.svg";
 import people_travel from "../assets/explore-1.svg";
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg"; 
-import AppSearchbar from "../organisms/searchbar";
-import AppProduct from "../molecules/product"
-import AppNavbar  from "../organisms/navbar";
+
 
 class AppLandingPage extends Component {
   constructor(props) {
@@ -27,7 +29,7 @@ class AppLandingPage extends Component {
         >
           <div class="container">
             <div class="row">
-              <div class="col-5">
+              <div class="col-5 pl-0">
                 <img src={people_travel} className="illustration" />
               </div>
               <div class="col-7">
@@ -44,19 +46,16 @@ class AppLandingPage extends Component {
               <div className="col-md-4" />
               <div className="col-md-8">
                 <p className="text-sm strong-600"> Popular Destinations </p>
-
-                <div className="row">
-                  <div className="col-md-3">
-                      <AppProduct image={img2} />
-                  </div>   <div className="col-md-3">
-                      <AppProduct image={img1} />
-                  </div>   <div className="col-md-3">
-                      <AppProduct image={img2} />
-                  </div>   <div className="col-md-3">
-                      <AppProduct  image={img1} />
-                  </div>
-                 
-                </div>
+                    <AppProductRow columns="4" 
+                       items={
+                        [
+                          {link:'/search',image:img2},
+                          {link:'/search',image:img1},
+                          {link:'/search',image:img2},
+                          {link:'/search',image:img1}
+                        ]
+                       } 
+                    />
               </div>
             </div>
           </div>
