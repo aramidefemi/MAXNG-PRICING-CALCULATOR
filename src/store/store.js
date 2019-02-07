@@ -16,18 +16,23 @@ export default function configureStore() {
     {
       search: {
         origin: {
+          address: '', //lagos nigeria
           lat: '', //6.436259,
           lng: '' //3.450753
         },
         destination: {
+          address: '', //lagos nigeria
           lat: '', //6.434324,
           lng: '' //3.476765
         },
         service_id: "e6f9a0b7-8f03-431f-a3da-7fbc914bbb72"
       },
       map : {
-        'modal-show':  true,
-         location: ''
+        'modal-show':  false,
+         address: '',
+         lat: '', //6.436259,
+         lng: '', //3.450753
+         path: '' //origin || destination
       }
     },
     applyMiddleware(thunk, logger, middlewares)

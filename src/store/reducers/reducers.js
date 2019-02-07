@@ -3,5 +3,5 @@ import search from './search';
 import map from './map'; 
 
 export default combineReducers({ 
-    search
+    search,map
 });

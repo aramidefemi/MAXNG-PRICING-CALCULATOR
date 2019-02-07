@@ -13,21 +13,18 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class MapModal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: this.props.state.map["modal-show"],
-      position: {
-        address: 'lagos, nigeria'
-      }
-    };
-    this.update = this.update.bind(this);
-    this.toggle = this.toggle.bind(this);
-    this.updatePosition = this.updatePosition.bind(this);
-    this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
-    this.onMarkerClick = this.onMarkerClick.bind(this);
-    this.onMapClicked = this.onMapClicked.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     modal: this.props.state.map["modal-show"],
+  //     position: {
+  //       address: 'lagos, nigeria'
+  //     }
+  //   };
+  //   this.update = this.update.bind(this);
+  //   this.toggle = this.toggle.bind(this);
+  //   this.updatePosition = this.updatePosition.bind(this);  
+  // }
 
   toggle() {
     this.props.dispatch({
@@ -36,75 +33,49 @@ class MapModal extends React.Component {
     });
   }
 
-  updatePosition(params) {
-    this.setState(prevState => ({
-      position: params
-    }));
-    // this.props.dispatch({
-    //   type: 'UPDATE_SEARCH',
-    //   payload: params
-    // })
-  }
-  update() {
-    this.setState(prevState => ({
-      modal: this.props.state.map["modal-show"]
-    }));
-  }
+  updateParams(params) {
+    this.props.dispatch({
+      type: 'UPDATE_PARAMS',
+      payload: params
+    })
+  }  
+  saveParams(params) {
+    this.props.dispatch({
+      type: 'UPDATE_SEARCH',
+      payload: params
+    })
+  } 
 
-  onMapClicked(props) {
-   
-    var lat = props.center.lat;
-    var lng = props.center.lng;
-                    var params = {
-                  address: this.state.position.address,
-                  lat: lat,
-                  lng: lng
-                };
-                
-                this.updatePosition(params);
-  }
+ 
+  // update() {
+  //   this.setState(prevState => ({
+  //     modal: this.props.state.map["modal-show"]
+  //   }));
+  // }
 
-  onMarkerClick(props, marker, e) {
-    var lat = props.position.lat;
-    var lng = props.position.lng;
-                    var params = {
-                  address: this.state.position.address,
-                  lat: lat,
-                  lng: lng
-                };
-                
-                this.updatePosition(params);
-  }
-  onSuggestionSelected(suggestion) {
-    // Add your business logic here. In this case we just log...
-    console.log('Selected suggestion:', suggestion)
-  }
-  componentDidUpdate = prevProps =>
-    prevProps.state.map["modal-show"] !== this.props.state.map["modal-show"]
-      ? this.update()
-      : "";
+
+ 
+  // componentDidUpdate = prevProps =>
+  //   prevProps.state.map["modal-show"] !== this.props.state.map["modal-show"]
+  //     ? this.update()
+  //     : "";
 
   render() {
-    console.log(this.props);
+    
     return (
       <div>
         <Modal
           size="lg"
-          isOpen={this.state.modal}
+          isOpen={this.props.state.map['modal-show']}
           toggle={this.toggle}
           className={this.props.className}
           onMapClicked={this.onMapClicked}
           onMarkerClick={this.onMarkerClick}
         >
           <ModalBody>
-            <MapContainer onMapClicked={this.onMapClicked} onMarkerClick={this.onMarkerClick} position={this.state.position} />
+            <MapContainer  />
           </ModalBody>
           <ModalFooter>
- 
-
-
-
-
             <Autocomplete
               style={{ width: "100%" }}
               onPlaceSelected={place => {
@@ -114,26 +85,26 @@ class MapModal extends React.Component {
                   lng: place.geometry.location.lng()
                 };
                 
-                this.updatePosition(params);
+                this.updateParams(params);
               }}
-              types={["(regions)"]}
+                types={["(regions)"]}
 
-            componentRestrictions={{country: "ng"}}
+                componentRestrictions={{country: "ng"}}
                     />
      
-                <Button color="warning" onClick={this.toggle}>
-                  Do Something
+                <Button color="warning" onClick={() =>
+
+                  this.saveParams({
+                    path : this.props.state.map.path,
+                             address: this.props.state.map.path,
+         lat: this.props.state.map.lat, 
+         lng: this.props.state.map.lng
+                  })
+
+                }>
+                  Next > 
                 </Button>
-               
-            
-               <Button color="secondary" onClick={this.toggle}>
-                  Cancel
-                </Button>
-         
  
-     
-
-
           </ModalFooter>
         </Modal>
       </div>
