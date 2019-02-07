@@ -1,12 +1,7 @@
-import { combineReducers } from 'redux';
-import onBoardingState from './on-boarding';
-import alert from './alert';
-import searchState from './search';
-import landingPageState from './landing-page';
+import { combineReducers } from 'redux'; 
+import search from './search'; 
+import map from './map'; 
 
-export default combineReducers({
-    onBoardingState,
-    alert,
-    searchState,
-    landingPageState
+export default combineReducers({ 
+    search
 });
