@@ -1,14 +1,31 @@
-import React, { Component } from "react"; 
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
+const mapStateToProps = state => ({
+  state: state
+});
+
+const mapDispatchToProps = dispatch => ({
+  dispatch: data => dispatch(data)
+});
 class AppAction extends Component {
-
-	  render() {
+  render() {
     return (
-                 <button className={" btn "+
-
-                  this.props.style}>Search</button>    
-              )
-	}
+      <button
+        className={" btn " + this.props.style}
+        onClick={() =>
+          this.props.dispatch({
+            type: "RUN_RESULTS"
+          })
+        }
+      >
+        <b>Calculate</b>
+      </button>
+    );
+  }
 }
 
-export default AppAction;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AppAction);

@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import AppHomePage from "./pages/home";   
+import AppHomePage from "./pages/home";
 
 const AppRouter = () => (
   <Router>
@@ -10,9 +10,7 @@ const AppRouter = () => (
         <div className="st-pusher">
           <div className="st-content">
             <div className="st-content-inner">
-           
-                <Route path="/" exact component={AppHomePage} /> 
-            
+              <Route path="/" exact component={AppHomePage} />
             </div>
           </div>
         </div>

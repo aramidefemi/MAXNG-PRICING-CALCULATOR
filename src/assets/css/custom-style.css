@@ -156,7 +156,14 @@ section.main-header .destinations {
     color: #000000;
     padding-top: 0;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
+  } 
+   section.main-header h3.heading {
+    font-weight: bold !important;
+    color: #000000;
+    padding-top: 0;
+    font-size: 15px;
+    text-align:left;
   }
 
   section.main-header .action-place {
@@ -186,3 +193,13 @@ section.main-header .destinations {
 .pac-container {
   z-index:  1100;
 }
+
+.modal-footer {
+    background: #ffdc04;
+  }
+
+  .modal-footer button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  }
